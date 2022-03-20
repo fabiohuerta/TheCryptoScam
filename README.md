@@ -6,3 +6,4 @@ Dá Start ao apache e ao MySQL no xampp <br>
 Importa o sql para o MySQL Pelo HeidiSQL <br>
 entra em <a href="http://localhost/">http://localhost/</a> <br>
 :)
+AGORA PODES IR PARA A PUTA QUE TE PARIU
