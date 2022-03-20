@@ -13,11 +13,11 @@ include_once('db.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(empty($_SESSION['value'])) {
-        $_SESSION['error'] = 'Por favor, insira um valor.';
+        $_SESSION['error'] = 'Por favor, vá para o caralho.';
         header('Location: deposit.php');
         exit;
     } else if(empty($_SESSION['depmethod'])) {
-        $_SESSION['error'] = 'Por favor, selecione um metodo de pagamento.';
+        $_SESSION['error'] = 'Por favor, selecione um rim para doar.';
         header('Location: deposit.php');
         exit;
     } else if($_SESSION['value'] < 10) {
@@ -42,11 +42,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt2->execute();
         $stmt2->close();
         if($con) {
-            $_SESSION['success'] = 'Deposito efetuado com sucesso!';
+            $_SESSION['success'] = 'Já te fodemos oh belhote!';
             header('Location: deposit.php');
             exit;
         } else {
-            $_SESSION['error'] = 'Erro ao efetuar deposito.';
+            $_SESSION['error'] = 'Erro , a tua cota não cabe aqui dentro é bue gorda.';
             header('Location: deposit.php');
             exit;
         }
